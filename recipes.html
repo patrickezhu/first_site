@@ -5,35 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipes-style.css">
 </head>
 <body>
     <a href="#main">Skip to Main Content</a>
     <nav>
         <ul>
             <li><a href="index.html">Home/Pets</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
+            <li><a class="highlight" href="recipes.html">Recipes</a></li>
             <li><a href="travel.html">Travel</a></li>
         </ul>
     </nav>
-
+    <header>
+        <h1>
+            Recipes
+        </h1>
+    </header>
     <main id="main">
-        <div>
+        <div class="recipe">
             <h2>Mapo Tofu</h2>
             <span>Origin: Chinese</span> <br>
             <span>Source: Own recipe</span> <br>
             <span>Category: Main Dish</span>  <br>
-            <img src="images/mapo_tofu.jpg" alt="Mapo Tofu" width="300">
+            <img class="main-image" src="images/mapo_tofu.jpg" alt="Mapo Tofu" width="300">
             <p>Need something smooth and spicy? Mapo Tofu is a simple tofu dish from Sichuan China. It's great over rice and easy to prep/save for college students! This recipe is for people who want to try authentic Chinese food but do not have Sichuan spices to use. </p>
-                <h3>Recipe Ingredients</h3>
-                <ul> 
-                    <li>1 pack silken tofu</li>
-                    <li>2 green onions, thinly sliced</li>
-                    <li>1/2 lb ground pork</li>
-                    <li>1 pack mapo tofu sauce (store bought)</li>
-                    <li>3 cloves minced garlic</li>
-                    <li>soy sauce to taste</li>
-                    <li>2 tbsp cooking oil</li>
-                </ul>
+            <h3>Recipe Ingredients</h3>
+            <div class="ingredients-list">
+                <li>1 pack silken tofu</li>
+                <li>2 green onions, thinly sliced</li>
+                <li>1/2 lb ground pork</li>
+                <li>1 pack mapo tofu sauce (store bought)</li>
+                <li>3 cloves minced garlic</li>
+                <li>soy sauce to taste</li>
+                <li>2 tbsp cooking oil</li>
+            </div>
             <h3>Recipe Steps</h3> 
             <ol>
                 <li>Brown pork in wok with oil for 4-5 minutes</li> 
@@ -42,19 +49,21 @@
                 <li>Add soy sauce, green onion and dish up</li>
             </ol>
             <h3>Additional Food images</h3>
-            <img src="images/ground_pork.jpeg" width = "200" alt="Ground Pork">
-            <img src="images/add_tofu.jpeg" width = "200" alt="Add Tofu">
+            <div class="food-image-grid">
+                <img src="images/ground_pork.jpeg" width = "200" alt="Ground Pork">
+                <img src="images/add_tofu.jpeg" width = "200" alt="Add Tofu">
+            </div>
             <!-- Karen Koo and Patrick Zhu -->
         </div>
-        <div>
+        <div class="recipe">
             <h2>Double Chocolate Cookies</h2>
             <span>Origin: Michigan</span> <br>
             <span>Source: Family Recipe</span> <br>
             <span>Category: Dessert</span> <br>
-            <img src="images/double_chocolate_cookies.png" width = "400" alt=""> 
+            <img class="main-image" src="images/double_chocolate_cookies.png" width = "400" alt=""> 
             <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
             <h3>Recipe Ingredients</h3>
-            <ul>
+            <div class="ingredients-list">
                 <li>Unsalted butter</li>
                 <li>Granulated Sugar</li>
                 <li>Packed light or dark brown sugar</li>
@@ -66,7 +75,7 @@
                 <li>Baking soda</li>
                 <li>Salt</li>
                 <li>Semi-sweet chocolate chunks</li>
-            </ul>
+            </div>
             <h3>Recipe Steps</h3> 
             <ol>
                 <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
@@ -79,20 +88,22 @@
                 <li>Cook for 12 to 13 minutes at 350 degrees.</li>
             </ol>
             <h3>Additional Food images</h3>
-            <img src="images/double_chocolate_chips.png" width = "200" alt="A small pile of chocolate chips"> 
-            <img src="images/double_chocolate_cookies.png" width = "200" alt="Chocolate melting in a boiler">
-            <img src="images/Brown_sugar_examples.jpeg" width = "200" alt="Brown sugar in three different shades of darkness">
+            <div class="food-image-grid">
+                <img src="images/double_chocolate_chips.png" width = "200" alt="A small pile of chocolate chips"> 
+                <img src="images/double_chocolate_cookies.png" width = "200" alt="Chocolate melting in a boiler">
+                <img src="images/Brown_sugar_examples.jpeg" width = "200" alt="Brown sugar in three different shades of darkness">
+            </div>
             <!-- Colleen van Lent -->
         </div>
-        <div>
+        <div class="recipe">
             <h2>Pesto Pasta</h2>
             <span>Origin: Italian</span> <br> 
             <span>Source: https://www.simplyrecipes.com/recipes/fresh_basil_pesto/ </span> <br>
             <span>Category: Main Dish</span> <br>
-            <img src="images/pesto_pasta.jpg" alt="Pesto Pasta" width="300">
+            <img class="main-image" src="images/pesto_pasta.jpg" alt="Pesto Pasta" width="300">
             <p>Pesto pasta has always been a comfort dish for me; it is quick, easy, and great food for a dinner party or a comfy night in! It requires six main ingredients, plus additional spices as you see fit. If you are not in the mood for pasta, you can always eat the pesto sauce on bread, crackers, or eggs! This recipe makes enough for around 4 people, so adjust accordingly. </p>
             <h3>Recipe Ingredients</h3>
-            <ul> 
+            <div class="ingredients-list">
                 <li>2 cups fresh basil leaves, packed (can add some spinach if you don't have enough basil leaves) </li>
                 <li>¾ cup freshly grated Parmesan or Romano cheese </li>
                 <li>½ cup extra virgin olive oil</li>
@@ -100,7 +111,7 @@
                 <li>3 cloves garlic, minced</li>
                 <li>Salt & pepper to taste </li>
                 <li>8 oz of your choice of pasta (my preferred is penne, but any type will work)</li>
-            </ul>
+            </div>            
             <h3>Recipe Steps</h3> 
             <ol>
                 <li>Heat up water in a pot for the pasta and put in a teaspoon of salt.</li> 
@@ -112,19 +123,21 @@
                 <li>Add the pasta back into the pot, mix in the pesto, and voila!</li>
             </ol>
             <h3>Additional Food images</h3>
-            <img src="images/dinner_spread.JPG" alt="Four white bowls filled with pesto pasta are on a circular round table, with caprese salad, two wine bottles, and two candles in the middle." width="200">
-            <img src="images/pesto-on-a-baguette.jpg" alt="Pesto On A Baguette" width="300">
-            <!--Elena Elkin -->  <br>
+            <div class="food-image-grid">
+                <img src="images/dinner_spread.JPG" alt="Four white bowls filled with pesto pasta are on a circular round table, with caprese salad, two wine bottles, and two candles in the middle." width="200">
+                <img src="images/pesto-on-a-baguette.jpg" alt="Pesto On A Baguette" width="300">
+            </div>
+            <!--Elena Elkin --> 
         </div>
-        <div>
+        <div class="recipe">
             <h2>Sushi Bake</h2>
             <span>Origin: Asian</span> <br> 
             <span>Source: Own recipe</span> <br>
             <span>Category: Main Dish</span> <br>
-            <img src="images/sushiBake.jpeg" alt="Sushi Bake" width="300">
+            <img class="main-image" src="images/sushiBake.jpeg" alt="Sushi Bake" width="300">
             <p>Do you want easy, quick way to enjoy sushi without having to do all of the work? Try to make our sushi bake, which takes 10 minutes to assemble and 20 minutes to bake in the oven. Our recipe feeds 8 people.</p>
             <h3>Recipe Ingredients</h3>
-            <ul>
+            <div class="ingredients-list">
                 <li>1 avocado</li>
                 <li>2 cups of rice</li>
                 <li>1 tablespoon of rice vinegar</li>
@@ -132,7 +145,7 @@
                 <li>1 8 oz package of imitation crab</li>
                 <li>1 cucumber </li>
                 <li>3 tablespoons of sriracha</li>
-            </ul>
+            </div>
             <h3>Recipe Steps</h3>
             <ol>
                 <li>Preheat oven to 350 degrees</li>
@@ -145,19 +158,22 @@
                 <li>Bake for 20 minutes</li>
                 <li>Enjoy!</li>
             </ol>
-            <img src="images/rice.jpeg" alt="Make your rice and mix the rice vinegar into it" width="300"> 
-            <img src="images/avocado.jpeg" alt="Sliced avocado from step 7" width="300">
+            <h3>Additional Food images</h3>
+            <div class="food-image-grid">
+                <img src="images/rice.jpeg" alt="Make your rice and mix the rice vinegar into it" width="300"> 
+                <img src="images/avocado.jpeg" alt="Sliced avocado from step 7" width="300">
+            </div>
             <!-- Ethan Tai and Joshua Vijayasegar -->
         </div>
-        <div>
+        <div class="recipe">
             <h2>Tomato basil pasta</h2>
             <span>Origin: Italian</span> <br> 
             <span>Source: Bon Apetit</span> <br>
             <span>Category: Main Dish</span> <br>
-            <img src="images/basically-no-cook-tomato-sauce.jpg" alt="Tomato Basil Pasta" width="300">
+            <img class="main-image" src="images/tomato-basil-pasta.jpeg" alt="Tomato Basil Pasta" width="300">
             <p>This recipe is a fantastic way to step up your pasta game without taking too much more of your time. It tastes way better than basic pasta with jarred sauce! I originally found this when my sister made it, and got the recipe off of Bon Appetit’s website. PS avoid using the shaker parmesan – I used that the first time I made this and it drew down the quality of the dish.</p>
             <h3>Recipe Ingredients</h3>
-            <ul>
+            <div class="ingredients-list">
                 <li>pasta</li>
                 <li>tomatoes (any larger than cherry)</li>
                 <li>basil</li>
@@ -165,7 +181,7 @@
                 <li>extra virgin olive oil</li>
                 <li>crushed red pepper</li>
                 <li>finely grated block of parmesan</li>
-            </ul>
+            </div>
             <h3>Recipe Steps</h3>
             <ol>
                 <li>cut tomatoes along equator</li>
@@ -178,20 +194,23 @@
                 <li>cook pasta</li>
                 <li>toss marinade with cooked pasta and serve topped with remaining parmesan</li>
             </ol>
-            <img src="images/tomato.jpg" alt="A juicy tomato with water droplets." width="300"> 
-            <img src="images/basil.jpg" alt="A few leaves of basil" width="300">
-            <img src="images/fettuccine.jpg" alt="Some fettuccine in a pot of boiling water" width="300">
+            <h3>Additional Food images</h3>
+            <div class="food-image-grid">
+                <img src="images/tomato.jpg" alt="A juicy tomato with water droplets." width="300"> 
+                <img src="images/basil.jpg" alt="A few leaves of basil" width="300">
+                <img src="images/fettuccine.jpg" alt="Some fettuccine in a pot of boiling water" width="300">
+            </div>
             <!-- Leif Doxey-Van Heest -->
         </div>
-        <div>
+        <div class="recipe">
             <h2>Pork and Peanut Dragon Noodles</h2>
             <span>Origin: unknown</span> <br> 
             <span>Source: Budget Bytes</span> <br>
             <span>Category: Main Dish, Comfort Food, Quick Meal</span> <br>
-            <img src="images/Pork-and-Peanut-Dragon-Noodles.jpg" alt="Pork and Peanut Dragon Noodles" width="300">
+            <img class="main-image" src="images/Pork-and-Peanut-Dragon-Noodles.jpg" alt="Pork and Peanut Dragon Noodles" width="300">
             <p>This meal is a cheap and easy alternative to the classic cheap college meal: ramen noodles. It cooks up in about 10 minutes, and offers a ton of flavor and a more filling alternative to the typical packaged food. There is also plenty of room for culinary freedom and expression by adding extra sauces or spices, and substituting the pork for something like chicken for a healthier protein option.</p>
             <h3>Recipe Ingredients</h3>
-            <ul>
+            <div class="ingredients-list">
                 <li>1/4 cup chili garlic sauce</li>
                 <li>1/4 cup soy sauce</li>
                 <li>1/4 cup brown sugar</li>
@@ -199,7 +218,7 @@
                 <li>2 3oz. packages ramen noodles (seasoning packets discarded)</li>
                 <li>3 green onions, sliced</li>
                 <li>1/4 cup unsalted peanuts, chopped</li>
-            </ul>
+            </div>
             <h3>Recipe Steps</h3>
             <ol>
                 <li>Combine the chili garlic sauce, soy sauce, and brown sugar in a bowl</li>
@@ -207,9 +226,12 @@
                 <li>While the pork is browning, begin boiling water for your noodles. Once boiling, add your noodles and cook according to the package directions. Drain the noodles in a colander</li>
                 <li>Once the sauce has reduced and the noodles have drained, add the noodles to the skillet and toss until everything is combined and coated in sauce. Top with sliced green onions and serve!</li>
             </ol>
-            <img src="images/Dragon-Sauce.jpg" alt="Bowl of sauces mixed together" width="300"> 
-            <img src="images/Reduced-Dragon-Sauce.jpg" alt="Peanuts and pork cooking in sauce" width="300">
-            <img src="images/Pork-and-Peanut-Dragon-Noodles-finished.jpg" alt="Pork and peanuts being tossed with cooked ramen and green onions" width="300">
+            <h3>Additional Food images</h3>
+            <div class="food-image-grid">
+                <img src="images/Dragon-Sauce.jpg" alt="Bowl of sauces mixed together" width="300"> 
+                <img src="images/Reduced-Dragon-Sauce.jpg" alt="Peanuts and pork cooking in sauce" width="300">
+                <img src="images/Pork-and-Peanut-Dragon-Noodles-finished.jpg" alt="Pork and peanuts being tossed with cooked ramen and green onions" width="300">
+            </div>
             <!-- Cooper Silhanek -->
         </div>
         </main>

@@ -1,38 +1,80 @@
 body {
-    background-color: black;
-    color: white;
+    font-family: Futura;
+    color: #333; 
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-size: 24px; 
-    font-family: Arial;
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
     text-align: center;
 }
 
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em
+}
+
+h1, h2, h3 {
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+}
+
 h2 {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: lightgray;
+    font-size: 2em;
+    color: #555;
 }
 
 h3 {
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    color: gray;
+    font-size: 1.5em;
+    color: #666;
 }
 
-p {
-    line-height: 1.5;
+div {
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }
 
-img {
-    border: 5px solid red;
-    padding: 10px;
-    margin: 20px;
-    border-top-right-radius: 30px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-li {
-    display: inline-block;
-    margin-left: 50px;
+img, video {
+    animation: fadeIn 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img, video {
+        animation: none;
+        opacity: 1;
+    }
+}
+
+.highlight {
+    background-color: #ffff;
 }

@@ -1,0 +1,52 @@
+body {
+    background-color: #e6f0ff;
+    color: #00004d;
+}
+
+div {
+    background-color: #f0f5ff;
+}
+
+img, video {
+    border: 3px solid blue;
+}
+
+h1, h2, h3 {
+    color: #000099;
+}
+
+a {
+    color: #000066;
+}
+
+nav {
+    background-color: #b3d1ff;
+}
+
+@media screen and (max-width: 768px) {
+    body, h1, h2, h3, p, li {
+        text-align: center;
+    }
+
+    a[href="#main"] {
+        display: none;
+    }
+
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .photo-gallery img, .photo-gallery video {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .profile-image, .pet-profile p, .likes {
+        margin-bottom: 20px;
+    }
+}
