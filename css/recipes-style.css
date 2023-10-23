@@ -36,10 +36,6 @@ nav {
         text-align: center;
     }
 
-    a[href="#main"] {
-        display: none;
-    }
-
     .ingredients-list {
         width: fit-content;
         margin: 0 auto; 

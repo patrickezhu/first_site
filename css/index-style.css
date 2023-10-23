@@ -28,10 +28,6 @@ nav {
         text-align: center;
     }
 
-    a[href="#main"] {
-        display: none;
-    }
-
     .photo-gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

@@ -32,10 +32,6 @@ h3 {
         text-align: center;
     }
 
-    a[href="#main"] {
-        display: none;
-    }
-
     .skip-link {
         position: absolute;
         top: -40px;

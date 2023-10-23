@@ -82,3 +82,17 @@ img, video {
 .highlight {
     background-color: #ffff;
 }
+
+a[href="#main"] {
+    position: absolute;
+    left: -9999px;
+}
+
+a[href="#main"]:focus {
+    position: static;
+    left: auto;
+}
+
+a:focus {
+    outline: 2px solid black; /* Add a blue border when focused */
+}
