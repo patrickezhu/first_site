@@ -15,6 +15,10 @@ h1, h2, h3 {
     color: #990000;
 }
 
+ul {
+    list-style-type: disc;
+}
+
 a {
     color: #660000;
 }
