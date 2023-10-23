@@ -9,6 +9,9 @@ body {
 nav {
     background-color: #333;
     padding: 10px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em
 }
 
 a {
@@ -26,7 +29,7 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em
@@ -74,13 +77,18 @@ img, video {
 
 @media (prefers-reduced-motion: reduce) {
     img, video {
-        animation: none;
+        animation: none !important;
         opacity: 1;
+    }
+
+    img[src$=".gif"] {
+        display: none !important;
     }
 }
 
 .highlight {
     background-color: #ffff;
+    text-decoration: underline;
 }
 
 a[href="#main"] {
@@ -94,5 +102,5 @@ a[href="#main"]:focus {
 }
 
 a:focus {
-    outline: 2px solid black; /* Add a blue border when focused */
+    outline: 2px solid black;
 }

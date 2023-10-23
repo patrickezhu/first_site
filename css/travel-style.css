@@ -54,17 +54,17 @@ h3 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        margin-bottom: 20px; /* Adjust space between rows */
+        margin-bottom: 20px;
     }
 
     .gallery-item img,  .gallery-item video{
-        max-width: 100%; /* Responsive images */
-        display: block; /* Remove inline-block spaces */
-        margin: auto; /* Centering the image */
+        max-width: 100%; 
+        display: block;
+        margin: auto;
     }
 
     .gallery-item p {
-        margin: auto; /* Centering the text */
+        margin: auto;
     }
 
     .gallery-item:nth-child(odd) img, .gallery-item:nth-child(odd) video {
