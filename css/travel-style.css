@@ -1,6 +1,7 @@
 body {
     background-color: #e6ffe6;
     color: #004d00;
+    text-align: center;
 }
 
 div {
@@ -9,10 +10,14 @@ div {
 
 img, video {
     border: 3px solid green;
+    max-width: 100%; 
+    display: block;
+    margin: 10px auto 0;
 }
 
 h1, h2, h3 {
     color: #009900;
+    margin-top: 20px;
 }
 
 a {
@@ -23,75 +28,50 @@ nav {
     background-color: #b3ffb3;
 }
 
-h3 {
-    margin-top: 20px;
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
 }
 
-@media screen and (max-width: 768px) {
-    body, h1, h2, h3, p {
-        text-align: center;
-    }
-
-    .skip-link {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #000000;
-        color: white;
-        padding: 8px;
-        z-index: 100;
-    }
-
-    .skip-link:focus {
-        top: 0;
-    }
-
-    .gallery-section {
-        display: block;
-    }
-
-    .gallery-item {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-bottom: 20px;
-    }
-
-    .gallery-item img,  .gallery-item video{
-        max-width: 100%; 
-        display: block;
-        margin: auto;
-    }
-
-    .gallery-item p {
-        margin: auto;
-    }
-
-    .gallery-item:nth-child(odd) img, .gallery-item:nth-child(odd) video {
-        grid-column: 2;
-    }
-
-    .gallery-item:nth-child(odd) p {
-        grid-row: 1;
-        grid-column: 1;
-    }
+.skip-link:focus {
+    top: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body, h1, h2, h3, p {
-        text-align: center;
-    }
+.gallery-section {
+    display: block;
+}
 
-    .skip-link {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #000000;
-        color: white;
-        padding: 8px;
-        z-index: 100;
-    }
+.gallery-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
+.gallery-item img, .gallery-item video {
+    display: block;
+    margin: auto;
+}
+
+.gallery-item p {
+    margin: auto;
+}
+
+.gallery-item:nth-child(odd) img, .gallery-item:nth-child(odd) video {
+    grid-column: 2;
+}
+
+.gallery-item:nth-child(odd) p {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+@media only screen and (min-width: 768px) {
     .image-container {
         display: flex;
         justify-content: center;
@@ -106,10 +86,6 @@ h3 {
         height: auto;
         object-fit: contain;
         margin: 0 5px;
-    }
-
-    .skip-link:focus {
-        top: 0;
     }
 
     .gallery-container {
@@ -141,3 +117,36 @@ h3 {
         grid-column: 1 / -1;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        max-width: 1024px;
+        margin: 20px auto;
+    }
+
+    .gallery-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .gallery-item p {
+        text-align: center;
+    }
+}
+
