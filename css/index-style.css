@@ -33,6 +33,8 @@ nav {
     justify-items: center;
     align-items: center;
     margin-bottom: 20px;
+    background-image: url("../images/blue-background.avif");
+    background-color: #cccccc;
 }
 
 .profile-image, .pet-profile p, .likes {
